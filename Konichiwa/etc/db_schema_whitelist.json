@@ -1,0 +1,19 @@
+{
+    "konichiwa_post": {
+        "column": {
+            "id": true,
+            "name": true,
+            "content": true,
+            "author": true,
+            "viewed": true,
+            "created_at": true
+        },
+        "constraint": {
+            "PRIMARY": true
+        }
+    }
+   
+    
+
+    
+}

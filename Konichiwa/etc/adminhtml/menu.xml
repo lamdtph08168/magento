@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Ecentura_Konichiwa::ecentura" title="Ecentura" module="Ecentura_Konichiwa" sortOrder="41" resource="Ecentura_Konichiwa::menu"/>
+        <add id="Ecentura_Konichiwa::parent" title="Ecentura Post" module="Ecentura_Konichiwa" sortOrder="10" resource="Ecentura_Konichiwa::menu" parent="Ecentura_Konichiwa::ecentura"/>
+        <add id="Ecentura_Konichiwa::post" title="Category Posts" module="Ecentura_Konichiwa" sortOrder="10" action="konichiwa/post/index" resource="Ecentura_Konichiwa::post" parent="Ecentura_Konichiwa::parent"/>
+        <add id="Ecentura_Konichiwa::pro" title="Products Posts" module="Ecentura_Konichiwa" sortOrder="10" action="konichiwa/pro/index" resource="Ecentura_Konichiwa::pro" parent="Ecentura_Konichiwa::parent"/>
+ 
+        <!-- <add id="Ecentura_Konichiwa::configuration" title="Configuration" module="Ecentura_Konichiwa" sortOrder="20" parent="Ecentura_Konichiwa::parent" action="adminhtml/system_config" resource="Ecentura_Konichiwa::parent"/> -->
+    </menu>
+</config>
